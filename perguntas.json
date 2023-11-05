@@ -1,6 +1,5 @@
 [
     {
-        "fase": 1,
         "pergunta": "O que significa pH?",
         "alternativas": [
             [
@@ -22,7 +21,6 @@
         ]
     },
     {
-        "fase": 2,
         "pergunta": "Qual normalmente e o estado de acidos na temperatura ambiente?",
         "alternativas": [
             [
@@ -39,6 +37,174 @@
             ],
             [
                 "Pernambuco",
+                false
+            ]
+        ]
+    },
+    {
+        "pergunta": "Quais desses sao indicadores, que mudam a cor de substancias conforme o carater acido ou base?",
+        "alternativas": [
+            [
+                "Tornassol e Hidróxido de Sódio",
+                false
+            ],
+            [
+                "Tornassol e Fenolftaleína",
+                true
+            ],
+            [
+                "Hidróxido de Sódio e Fenolftaleína",
+                false
+            ],
+            [
+                "Ácido e Base",
+                false
+            ]
+        ]
+    },
+    {
+        "pergunta": "Qual desses e um acido inorganico?",
+        "alternativas": [
+            [
+                "Acido Cloridrico",
+                true
+            ],
+            [
+                "Acido Carbonico",
+                false
+            ],
+            [
+                "Acido Citrico",
+                false
+            ],
+            [
+                "Acido Acetico",
+                false
+            ]
+        ]
+    },
+    {
+        "pergunta": "As classificaçoes como monoacidos e triacidos estão ligadas a liberacao do que?",
+        "alternativas": [
+            [
+                "Protons",
+                false
+            ],
+            [
+                "Eletrons",
+                false
+            ],
+            [
+                "Ions",
+                true
+            ],
+            [
+                "Acido",
+                false
+            ]
+        ]
+    },
+    {
+        "pergunta": "Qual dessas nao e uma caracteristica dos acidos?",
+        "alternativas": [
+            [
+                "Odor Forte e Asfixiante",
+                false
+            ],
+            [
+                "Sabor Azedo",
+                false
+            ],
+            [
+                "Reage com Metal",
+                false
+            ],
+            [
+                "Alto Ponto de Fusao e Ebulicao",
+                true
+            ]
+        ]
+    },
+    {
+        "pergunta": "Acidos e bases conduzem agua em meio aquoso?",
+        "alternativas": [
+            [
+                "Sim",
+                true
+            ],
+            [
+                "Nao",
+                false
+            ],
+            [
+                "Apenas base",
+                false
+            ],
+            [
+                "Apenas acidos",
+                false
+            ]
+        ]
+    },
+    {
+        "pergunta": "Qual sabor as bases possuem?",
+        "alternativas": [
+            [
+                "Azedo",
+                false
+            ],
+            [
+                "Amargo",
+                true
+            ],
+            [
+                "Salgado",
+                false
+            ],
+            [
+                "Doce",
+                false
+            ]
+        ]
+    },
+    {
+        "pergunta": "Bases se desintegram em altas temperaturas?",
+        "alternativas": [
+            [
+                "Sim",
+                true
+            ],
+            [
+                "Nao",
+                false
+            ],
+            [
+                "Nao, mas em baixas sim",
+                false
+            ],
+            [
+                "Nao, mas acidos sim",
+                false
+            ]
+        ]
+    },
+    {
+        "pergunta": "Qual desses pH e considerado uma base",
+        "alternativas": [
+            [
+                "3",
+                false
+            ],
+            [
+                "5",
+                false
+            ],
+            [
+                "2",
+                false
+            ],
+            [
+                "6",
                 false
             ]
         ]

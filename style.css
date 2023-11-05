@@ -1,10 +1,12 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define os caracteres da página */
 
+/* Pega uma fonte baixada */
 @font-face {
     font-family: "fonte-crianca";
     src: url(assets/kindergarten.ttf) format("truetype");
 }
 
+/* Variáveis */
 :root {
     --fundo-fase: #996699;
     --fundo-botao: #986701;
@@ -12,6 +14,7 @@
     --borda: #973405;
 }
 
+/* Reset */
 * {
     font-family: "fonte-crianca";
     margin: 0;
@@ -19,13 +22,22 @@
     box-sizing: border-box;
 }
 
+/* Corpo */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .fase {
+    /* Número que indica a fase */
     position: absolute;
     top: 10px;
     left: 10px;
@@ -38,17 +50,38 @@ body {
     height: 100px;
 }
 
+.fase.clicavel {
+    /* Número que indica a fase no último nível */
+    cursor: pointer;
+}
+
+.fase.clicavel:hover {
+    /* Número que indica a fase no último nível */
+    background-color: var(--fundo-botao-clicado);
+}
+
 .titulo {
+    /* Título e perguntas */
     text-align: center;
+    width: 80%;
     padding: 20px;
     font-size: clamp(4em, 10vw, 7em);
 }
+
+.pergunta {
+    /* Pergunta */
+    font-size: 5em;
+    width: 90%;
+}
+
+/* Main */
 
 main {
     text-align: center;
     flex: 1;
 }
 
+/* Main do index */
 .main-principal {
     display: flex;
     text-align: center;
@@ -71,6 +104,7 @@ section.section-botoes-principal {
     gap: 40px;
 }
 
+/* Main da página de instruções */
 .main-instrucoes {
     padding: 50px;
 }
@@ -80,6 +114,7 @@ section.section-botoes-principal {
     margin-bottom: 30px;
 }
 
+/* Main da página de créditos */
 .main-creditos {
     display: flex;
     justify-content: center;
@@ -93,6 +128,7 @@ section.section-botoes-principal {
     text-align: center;
 }
 
+/* Main da página de perguntas */
 .main-perguntas {
     display: grid;
     grid-template-columns: repeat(2, 450px);
@@ -102,25 +138,15 @@ section.section-botoes-principal {
     align-content: center;
 }
 
-@media screen and (max-width: 900px) {
-    .main-perguntas {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .main-perguntas {
-        grid-template-columns: 1fr;
-    }
-}
-
+/* Botões */
 .botao {
     border: 10px solid var(--borda);
     background-color: var(--fundo-botao);
     color: black;
-    font-size: clamp(3em, 5vw, 4em);
+    font-size: clamp(2.5em, 5vw, 4em);
     min-width: 80%;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .botao:hover {
@@ -128,8 +154,34 @@ section.section-botoes-principal {
     background-color: var(--fundo-botao-clicado);
 }
 
+/* Footer */
 footer {
     text-align: end;
     padding: 20px;
     font-size: 1.5em;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1300px) {
+    .botao {
+        font-size: 2.5em;
+    }
+    .main-perguntas {
+        grid-template-columns: repeat(2, 300px);
+    }
+    .pergunta {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-perguntas {
+        grid-template-columns: 1fr 1fr;
+    }    
+}    
+
+@media screen and (max-width: 500px) {
+    .main-perguntas {
+        grid-template-columns: 1fr;
+    }    
 }
