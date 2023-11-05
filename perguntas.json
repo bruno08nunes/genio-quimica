@@ -1,0 +1,46 @@
+[
+    {
+        "fase": 1,
+        "pergunta": "O que significa pH?",
+        "alternativas": [
+            [
+                "Potencial Hidrogenionico",
+                true
+            ],
+            [
+                "Parametro Homogeneo",
+                false
+            ],
+            [
+                "Propriedade Hereditaria",
+                false
+            ],
+            [
+                "Paulo Henrique",
+                false
+            ]
+        ]
+    },
+    {
+        "fase": 2,
+        "pergunta": "Qual normalmente e o estado de acidos na temperatura ambiente?",
+        "alternativas": [
+            [
+                "Solido",
+                false
+            ],
+            [
+                "Gasoso",
+                false
+            ],
+            [
+                "Liquido",
+                true
+            ],
+            [
+                "Pernambuco",
+                false
+            ]
+        ]
+    }
+]

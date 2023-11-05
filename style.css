@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "fonte-crianca";
+    src: url(assets/kindergarten.ttf) format("truetype");
+}
+
+:root {
+    --fundo-fase: #996699;
+    --fundo-botao: #986701;
+    --fundo-botao-clicado: #99ff00;
+    --borda: #973405;
+}
+
+* {
+    font-family: "fonte-crianca";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fase {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--fundo-fase);
+    text-align: center;
+    font-size: 6em;
+    border-radius: 50%;
+    border: 5px solid var(--borda);
+    width: 100px;
+    height: 100px;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+    font-size: clamp(4em, 10vw, 7em);
+}
+
+main {
+    text-align: center;
+    flex: 1;
+}
+
+.main-principal {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.main-principal section {
+    flex-grow: 1;
+}
+
+.main-principal section img {
+    width: 20vw;
+}
+
+section.section-botoes-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 3;
+    gap: 40px;
+}
+
+.main-instrucoes {
+    padding: 50px;
+}
+
+.main-instrucoes :not(.botao) {
+    font-size: clamp(3em, 4.5vw, 5em);
+    margin-bottom: 30px;
+}
+
+.main-creditos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin: auto;
+}
+
+.main-creditos + footer {
+    font-size: clamp(2em, 4.5vw, 5em);
+    text-align: center;
+}
+
+.main-perguntas {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .main-perguntas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-perguntas {
+        grid-template-columns: 1fr;
+    }
+}
+
+.botao {
+    border: 10px solid var(--borda);
+    background-color: var(--fundo-botao);
+    color: black;
+    font-size: clamp(3em, 5vw, 4em);
+    min-width: 80%;
+    text-decoration: none;
+}
+
+.botao:hover {
+    scale: 1.05;
+    background-color: var(--fundo-botao-clicado);
+}
+
+footer {
+    text-align: end;
+    padding: 20px;
+    font-size: 1.5em;
+}
