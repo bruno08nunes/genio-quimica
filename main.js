@@ -39,7 +39,7 @@ function mudarPagina() {
         // Se for a última fase, faz com que o icone da fase se torne clicavel
         faseIndicador.className += " clicavel";
         faseIndicador.addEventListener("click", () => {
-            window.location.href = "vitoria.html";
+            window.location.href = "pages/vitoria.html";
         })
     }
 
